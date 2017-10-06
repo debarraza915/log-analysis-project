@@ -16,7 +16,7 @@
   3. Download the VM configuration. You can download and unzip this file: [FSND-Virtual-Machine.zip](FSND-Virtual-Machine.zip)
   3. Next, [download the data here.](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) Unzip the file after downloading it. The file inside is called **newsdata.sql**. Put this file into the vagrant directory found inside the previously downloaded **FSND-Virtual-Machine** folder.
   5. Copy the content of this current repository, by either downloading or cloning it from
-  [here](https://github.com/sagarchoudhary96/Log-Analysis)
+  [here](https://github.com/sagarchoudhary96/Log-Analysis). Put this repository into the vagrant directory found inside the previously downloaded **FSND-Virtual-Machine** folder.
 
 #### Launching the Virtual Machine:
   1. Launch the Vagrant VM inside Vagrant sub-directory in the downloaded **FSND-Virtual-Machine** repository using command:
@@ -31,9 +31,9 @@
   ```
   3. Change directory to /vagrant and look around with ls.
 
-#### Setting up the database and Creating Views:
+#### Setting up the database:
 
-  1. Load the data in local database using the command:
+  1. Load the data in database using the command:
 
   ```
     psql -d news -f newsdata.sql
