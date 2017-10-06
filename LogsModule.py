@@ -8,7 +8,6 @@ class Query(object):
 
     def __init__(self, query_title, query):
 
-
         self.query_title = query_title
         self.query = query
         self.query_results = ""
@@ -25,9 +24,9 @@ class Query(object):
 
     # stores query result
     def print_query_results(self):
-        print (self.final_results[1])
+        print(self.final_results[1])
         for (index, results) in enumerate(self.final_results[0]):
-            print (
+            print(
                 '\t',
                 index + 1,
                 '-',
@@ -39,6 +38,6 @@ class Query(object):
 
     # print formatted output
     def print_error_results(self):
-        print (self.final_results[1])
+        print(self.final_results[1])
         for results in self.final_results[0]:
-            print ('\t', results[0], '-', str(results[1]) + '% errors')
+            print('\t', results[0], '-', str(results[1]) + '% errors')
